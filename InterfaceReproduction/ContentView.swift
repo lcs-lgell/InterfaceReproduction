@@ -23,7 +23,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
                     Spacer()
                 }
-                .padding(.vertical, 15)
+                .padding(.vertical, 10)
                
                 // bed and ther titles
                 HStack {
@@ -43,14 +43,36 @@ struct ContentView: View {
                             .foregroundColor(.gray)
                             .font(Font.system(size: 50, weight: .light))
                         
-                        Text("Tomorrow Morning")
-                            .foregroundColor(.gray)
-                            
+                        
+                            Text("Tomorrow Morning")
+                                .foregroundColor(.gray)
+                                
 
                     }
+                    Spacer()
+                    // adding a button
+                            Button(action: {}) {
+                                Text("CHANGE")
+                                    .foregroundColor(Color("paleorange"))
+                                    .font(Font.system(size: 15, weight: .medium))
+                            }
+                            .tint(Color("darkgrey"))
+                            .buttonStyle(.borderedProminent)
+                            .buttonBorderShape(.automatic)
+                            .controlSize(.small)
                     
 
                 }
+                .padding(.vertical, 20)
+                //text other before the custom structures
+                HStack {
+                    Text("Other")
+                        .foregroundColor(.white)
+                        .font(Font.system(size: 20, weight: .medium))
+                    Spacer()
+                }
+                
+                
                 
                 
             }
@@ -61,6 +83,38 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TabView(selection: Binding.constant(2)) {
+            
+            ContentView()
+                .tabItem {
+                    Image(systemName: "globe")
+                    Text("World Clock")
+                }
+            
+            ContentView()
+                .tabItem {
+                    Image(systemName: "alarm.fill")
+                    Text("Alarm")
+                }
+            
+            Text("Stopwatch")
+                .tabItem {
+                    Image(systemName: "stopwatch.fill")
+                    Text("Stopwatch")
+                    
+                }
+            
+            Text("Timer")
+                .tabItem {
+                    Image(systemName: "timer")
+                    Text("Timer")
+                }
+            
+        }
+        //change the current view you on its color
+        .accentColor(.orange)
+        // makes every logo on the bottom visible to light grey
+        .preferredColorScheme(.dark)
     }
-}
+    }
+
