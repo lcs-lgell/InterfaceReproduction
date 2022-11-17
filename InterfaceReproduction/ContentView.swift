@@ -39,13 +39,17 @@ struct ContentView: View {
                 // Grey writing and change button
                 HStack{
                     VStack{
-                        Text("No Alarm")
-                            .foregroundColor(.gray)
-                            .font(Font.system(size: 50, weight: .light))
-                        
-                        
+                        HStack{
+                            Text("No Alarm")
+                                .foregroundColor(.gray)
+                                .font(Font.system(size: 50, weight: .light))
+                            Spacer()
+                        }
+                        HStack {
                             Text("Tomorrow Morning")
                                 .foregroundColor(.gray)
+                            Spacer()
+                        }
                                 
 
                     }
@@ -70,6 +74,29 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .font(Font.system(size: 20, weight: .medium))
                     Spacer()
+                }
+                
+                // toggles
+                
+                Toggle(isOn: .constant(true)) {
+                    VStack{
+                        HStack {
+                            Text("5:07")
+                                .foregroundColor(.white)
+                                .font(Font.system(size:60, weight: .thin))
+                            
+                            Text("AM")
+                                .font(Font.system(size:30, weight: .thin))
+                            Spacer()
+                        }
+                        HStack {
+                            Text("Alarm")
+                            Spacer()
+                            
+                        }
+                        
+                    }
+                    Divider()
                 }
                 
                 
