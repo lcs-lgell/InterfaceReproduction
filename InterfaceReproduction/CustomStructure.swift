@@ -32,7 +32,7 @@ struct CustomStructure: View {
             
             Toggle(isOn: $truefalse) {
                 VStack{
-                    HStack {
+                    HStack(alignment: .firstTextBaseline) {
                         Text(time)
                             .foregroundColor(color)
                             .font(Font.system(size:60, weight: .thin))
