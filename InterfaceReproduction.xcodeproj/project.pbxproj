@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0DE0242927055C00ED1510 /* CustomStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0DE0232927055C00ED1510 /* CustomStructure.swift */; };
 		EEFCA5DB2925471100E0089A /* InterfaceReproductionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCA5DA2925471100E0089A /* InterfaceReproductionApp.swift */; };
 		EEFCA5DD2925471100E0089A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCA5DC2925471100E0089A /* ContentView.swift */; };
 		EEFCA5DF2925472900E0089A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEFCA5DE2925472900E0089A /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE0DE0232927055C00ED1510 /* CustomStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStructure.swift; sourceTree = "<group>"; };
 		EEFCA5D72925471100E0089A /* InterfaceReproduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceReproduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFCA5DA2925471100E0089A /* InterfaceReproductionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceReproductionApp.swift; sourceTree = "<group>"; };
 		EEFCA5DC2925471100E0089A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				EEFCA5DA2925471100E0089A /* InterfaceReproductionApp.swift */,
 				EEFCA5DC2925471100E0089A /* ContentView.swift */,
+				EE0DE0232927055C00ED1510 /* CustomStructure.swift */,
 				EEFCA5DE2925472900E0089A /* Assets.xcassets */,
 				EEFCA5E02925472900E0089A /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				EEFCA5DD2925471100E0089A /* ContentView.swift in Sources */,
 				EEFCA5DB2925471100E0089A /* InterfaceReproductionApp.swift in Sources */,
+				EE0DE0242927055C00ED1510 /* CustomStructure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
